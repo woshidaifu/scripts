@@ -1,11 +1,21 @@
 tiles:
-  - name: 节点信息
+  - name: 网络状态
     type: info
     content:
+      - 上传速率: $network.upload_speed
+      - 下载速率: $network.download_speed
       - 当前节点: $node.name
-      - 延迟: $node.ping ms
-      - 上传: $traffic.upload MB
-      - 下载: $traffic.download MB
+
+  - name: VPN 控制
+    type: button
+    actions:
+      - label: 开启 VPN
+        action: set_vpn
+        arguments: on
+      - label: 关闭 VPN
+        action: set_vpn
+        arguments: off
+
   - name: 模式切换
     type: button
     actions:
