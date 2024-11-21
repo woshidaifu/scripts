@@ -1,30 +1,10 @@
 tiles:
-  - name: 网络状态
-    type: info
+  - name: your-fancy-script
+    interval: 60
+    title: '速率'
     content:
       - 上传速率: $network.upload_speed
       - 下载速率: $network.download_speed
       - 当前节点: $node.name
-
-  - name: VPN 控制
-    type: button
-    actions:
-      - label: 开启 VPN
-        action: set_vpn
-        arguments: on
-      - label: 关闭 VPN
-        action: set_vpn
-        arguments: off
-
-  - name: 模式切换
-    type: button
-    actions:
-      - label: 切换到规则模式
-        action: set_proxy_mode
-        arguments: rule
-      - label: 切换到全局代理
-        action: set_proxy_mode
-        arguments: global
-      - label: 切换到直连
-        action: set_proxy_mode
-        arguments: direct
+    icon: 'theatermasks.circle.fill' # 或 https://stash.ws/amazing.png
+    backgroundColor: '#663399'
