@@ -1,5 +1,10 @@
+name: 当前状态
+desc: 当前状态
+category: tiles
+icon: https://telegraph.19940731.xyz/file/7044fd6b39224ecfd42ab.png
+
 tiles:
-  - name: your-fancy-script
+  - name:  当前状态
     interval: 60
     title: '速率'
     content:
